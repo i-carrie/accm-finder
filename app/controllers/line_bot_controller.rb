@@ -56,19 +56,7 @@ class LineBotController < ApplicationController
           altText: '宿泊検索の結果です。',
           contents: set_carousel(response['hotels'])
         }
-        # text = ''
-        # response['hotels'].each do |hotel|
-        #   text <<
-        #     hotel[0]['hotelBasicInfo']['hotelName'] + "\n" +
-        #     hotel[0]['hotelBasicInfo']['hotelInformationUrl'] + "\n" +
-        #     "\n"
-        # end
       end
-
-      # message = {
-      #   type: 'text',
-      #   text: text
-      # }
     end
 
     def set_carousel(hotels)
@@ -208,3 +196,4 @@ class LineBotController < ApplicationController
       }
     end
 end
+
